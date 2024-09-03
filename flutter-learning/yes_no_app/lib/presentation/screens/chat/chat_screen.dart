@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:yes_no_app/presentation/widgets/chat/her_message_bubble.dart';
 import 'package:yes_no_app/presentation/widgets/chat/my_message_bubble.dart';
+import 'package:yes_no_app/presentation/widgets/shared/message_field_box.dart';
 
 class ChatScreen extends StatelessWidget {
   const ChatScreen({super.key});
@@ -15,7 +17,8 @@ class ChatScreen extends StatelessWidget {
                 'https://media.licdn.com/dms/image/D4E03AQFaAAC6RhtLzw/profile-displayphoto-shrink_400_400/0/1715611270186?e=2147483647&v=beta&t=4ARlD_NNKDy6cJqSToKkoRBieeApBzM6oHcRF-iHfGU'),
           ),
         ),
-        title: const Text('Adeli Zamora ♥'),
+        title:
+            const Text('Adeli Zamora ♥', style: TextStyle(color: Colors.black)),
         centerTitle: true,
       ),
       body: const ChatView(),
@@ -39,11 +42,14 @@ class ChatView extends StatelessWidget {
               child: ListView.builder(
                 itemCount: 10,
                 itemBuilder: (context, index) {
-                  return const MyMessageBubble();
+                  if (index % 2 == 0) {
+                    return const MyMessageBubble();
+                  }
+                  return const HerMessageBubble();
                 },
               ),
             ),
-            Text('Mundo')
+            const MessageFieldBox()
           ],
         ),
       ),
