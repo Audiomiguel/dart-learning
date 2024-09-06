@@ -11,6 +11,7 @@ class Rectangulo {
   }
 
   Rectangulo.cuadrado(int base) {
+    // Cuadrado
     this.base = base;
     this.altura = base;
     this.area = base * base;
