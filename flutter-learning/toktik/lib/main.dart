@@ -5,7 +5,7 @@ import 'package:toktik/presentation/providers/discover_provider.dart';
 import 'package:toktik/presentation/screens/discover/discover_screen.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (_) => DiscoverProvider())],
+      providers: [
+        ChangeNotifierProvider(
+            lazy: false, create: (_) => DiscoverProvider()..loadNexPage())
+      ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: AppTheme().getTheme(),

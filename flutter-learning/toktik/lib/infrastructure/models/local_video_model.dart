@@ -14,10 +14,10 @@ class LocalVideoModel {
 
   factory LocalVideoModel.fromJson(Map<String, dynamic> json) {
     return LocalVideoModel(
-      name: json['name'],
-      videoUrl: json['videoUrl'],
-      likes: json['likes'],
-      views: json['views'],
+      name: json['name'] ?? 'No video name',
+      videoUrl: json['videoUrl'] ?? '',
+      likes: json['likes'] ?? 0,
+      views: json['views'] ?? 0,
     );
   }
 
