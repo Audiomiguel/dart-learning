@@ -1,8 +1,8 @@
 class VideoPost {
   final String caption;
   final String videoUrl;
-  final int? likes;
-  final int? views;
+  final int likes;
+  final int views;
 
   VideoPost(
       {required this.caption,

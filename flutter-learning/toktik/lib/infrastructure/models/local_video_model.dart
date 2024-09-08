@@ -25,8 +25,8 @@ class LocalVideoModel {
     return VideoPost(
       caption: name,
       videoUrl: videoUrl,
-      likes: likes,
-      views: views,
+      likes: likes ?? 0,
+      views: views ?? 0,
     );
   }
 }
