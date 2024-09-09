@@ -24,4 +24,14 @@ const appMenuItems = <MenuItem>[
       title: 'Tarjetas',
       subtitle: 'Un contenedor estilizado',
       link: '/cards'),
+  MenuItem(
+      title: 'Progress Indicator',
+      subtitle: 'Generales y controlados',
+      link: '/progress',
+      icon: Icons.refresh_rounded),
+  MenuItem(
+      title: 'Snackbars y diálogos',
+      subtitle: 'Indicadores en pantalla',
+      link: '/snackbars',
+      icon: Icons.info_outline),
 ];
