@@ -34,4 +34,34 @@ const appMenuItems = <MenuItem>[
       subtitle: 'Indicadores en pantalla',
       link: '/snackbars',
       icon: Icons.info_outline),
+  MenuItem(
+      title: 'Animated Container',
+      subtitle: 'Stateful Widget Animado',
+      link: '/animated',
+      icon: Icons.animation),
+  MenuItem(
+      title: 'UI Controls',
+      subtitle: 'Una serie de controles en Flutter',
+      link: '/ui-controls',
+      icon: Icons.control_point_sharp),
+  MenuItem(
+      title: 'Tutorial',
+      subtitle: 'Introduccion a la aplicacion',
+      link: '/tutorial',
+      icon: Icons.help),
+  MenuItem(
+      title: 'Infinite Scroll',
+      subtitle: 'Infinite Listsand pull to refresh',
+      link: '/infinite-scroll',
+      icon: Icons.screen_rotation_alt_outlined),
+  MenuItem(
+      title: 'Counter Riverpod',
+      subtitle: 'Contador con el gestor de estado RiverPod',
+      link: '/counter',
+      icon: Icons.countertops),
+  MenuItem(
+      title: 'Theme Changer Riverpod',
+      subtitle: 'Contador con el gestor de estado RiverPod',
+      link: '/theme-changer',
+      icon: Icons.change_circle),
 ];
